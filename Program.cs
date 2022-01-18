@@ -4,7 +4,7 @@ namespace EnthusiasticMoose
 {
     class Program
     {
- static void Main(string[] args)
+static void Main(string[] args)
 {
     Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
     Console.WriteLine("--------------------------------------------");
@@ -16,7 +16,14 @@ namespace EnthusiasticMoose
 
     // As a question
     bool isTrue = MooseAsks("Is Canada real?");
-    Console.WriteLine(isTrue);
+    if (isTrue)
+    {
+        MooseSays("Really? It seems very unlikely.");
+    }
+    else
+    {
+        MooseSays("I  K N E W  I T !!!");
+    }
 }
 
 static bool MooseAsks(string question)
